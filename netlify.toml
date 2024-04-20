@@ -1,0 +1,12 @@
+[build.environment]
+  NPM_FLAGS = "--version"
+  NODE_VERSION = "18"
+
+[build]
+  publish = ".vitepress/dist"
+  command = "npx pnpm i  && npx pnpm docs:build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
