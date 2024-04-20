@@ -4,7 +4,7 @@
 
 [build]
   publish = ".vitepress/dist"
-  command = "npx pnpm i  && npx pnpm docs:build"
+  command = "npx pnpm install --no-frozen-lockfile  && npx pnpm docs:build"
 
 [[redirects]]
   from = "/*"
